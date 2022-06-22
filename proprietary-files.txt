@@ -270,6 +270,12 @@ vendor/lib64/libvidhance.so
 vendor/lib64/libxmi_high_dynamic_range.so
 vendor/lib64/libxml2_vendor.so
 
+# Camera face detection
+vendor/etc/camera/megviifacepp_0_5_2_model:vendor/etc/camera/facedetectpp_0_5_2_model
+vendor/lib64/libMegviiFacepp-0.5.2.so:vendor/lib64/libFaceDetectpp-0.5.2.so;FIX_SONAME
+vendor/lib64/libmegface.so:vendor/lib64/libfacedet.so;FIX_SONAME
+
+
 # Camera Firmware
 vendor/firmware/CAMERA_ICP.elf
 
