@@ -1,0 +1,7 @@
+# Indian model
+ro.product.odm.brand=POCO
+ro.product.odm.device=phoenixin
+ro.product.odm.manufacturer=Xiaomi
+ro.product.odm.model=POCO X2
+ro.product.odm.name=phoenixin
+ro.product.mod_device=phoenixin_in_global

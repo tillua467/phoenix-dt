@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021-2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -23,13 +23,10 @@ TARGET_KERNEL_CONFIG += vendor/phoenix.config
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
-ODM_MANIFEST_SKUS += phoenix
-ODM_MANIFEST_PHOENIX_FILES := \
+DEVICE_MANIFEST_SKUS += phoenix
+DEVICE_MANIFEST_PHOENIX_FILES := \
+    $(DEVICE_MANIFEST_FILE) \
      $(DEVICE_PATH)/configs/hidl/manifest-nfc.xml
-
-# Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_phoenix
-TARGET_RECOVERY_DEVICE_MODULES := libinit_phoenix
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
@@ -42,7 +39,8 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 254619418624
 BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 9122611200 # (BOARD_SUPER_PARTITION_SIZE - 4194304) 4MiB overhead
 
 # Properties
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor

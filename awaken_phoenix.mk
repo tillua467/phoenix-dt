@@ -23,3 +23,8 @@ PRODUCT_DEVICE := phoenix
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi K30
 PRODUCT_MANUFACTURER := Xiaomi
+
+BUILD_FINGERPRINT := Redmi/phoenix/phoenix:11/RKQ1.200826.002/21.9.28:user/release-keys
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="phoenix-user 11 RKQ1.200826.002 21.9.28 release-keys"

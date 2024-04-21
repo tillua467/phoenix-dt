@@ -1,0 +1,8 @@
+# Global model
+ro.boot.product.vendor.sku=phoenix
+ro.product.odm.brand=Redmi
+ro.product.odm.device=phoenix
+ro.product.odm.manufacturer=Xiaomi
+ro.product.odm.model=Redmi K30
+ro.product.odm.name=phoenix
+ro.product.mod_device=phoenix

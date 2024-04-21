@@ -22,3 +22,6 @@ vendor.display.disable_idle_time_video=1
 vendor.display.disable_rotator_downscale=1
 vendor.display.idle_time=0
 vendor.display.idle_time_inactive=0
+
+# System properties
+ro.product.property_source_order=odm,vendor,product,system_ext,system
