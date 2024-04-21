@@ -23,10 +23,6 @@ TARGET_KERNEL_CONFIG += vendor/phoenix.config
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
-DEVICE_MANIFEST_SKUS += phoenix
-DEVICE_MANIFEST_PHOENIX_FILES := \
-    $(DEVICE_MANIFEST_FILE) \
-     $(DEVICE_PATH)/configs/hidl/manifest-nfc.xml
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
