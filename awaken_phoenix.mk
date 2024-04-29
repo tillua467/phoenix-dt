@@ -13,6 +13,8 @@ $(call inherit-product, device/xiaomi/phoenix/device.mk)
 
 #Flags for AwakenOS
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_LIVE_WALLPAPERS=true
+TARGET_SUPPORTS_GOOGLE_RECORDER=true
 USE_PIXEL_CHARGER = true
 
 # Inherit some common AwakenOS stuff.
