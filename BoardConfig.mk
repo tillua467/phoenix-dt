@@ -19,7 +19,7 @@ TARGET_PROVIDES_AUDIO_EXTNS := true
 TARGET_OTA_ASSERT_DEVICE := phoenix,phoenixin
 
 # Kernel
-TARGET_KERNEL_CONFIG += vendor/phoenix.config
+KERNEL_FRAGMENT_CONFIG += vendor/phoenix.config
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
