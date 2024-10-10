@@ -40,6 +40,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libkeymaster_messages.vendor:64
 
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.vendor.fingerprint.type=side \
+    ro.vendor.fingerprint.sensor_location=1080|840|115|local:4630946687422888065
+
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-fpc.idc \
