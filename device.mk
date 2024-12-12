@@ -34,6 +34,7 @@ PRODUCT_PACKAGES += \
 
 # Device Settings
 PRODUCT_PACKAGES += \
+    DSPVolumeSynchronizer \
     XiaomiDolby
 
 # Dolby
