@@ -29,6 +29,7 @@ TARGET_OTA_ASSERT_DEVICE := phoenix,phoenixin
 TARGET_KERNEL_CONFIG += vendor/phoenix.config
 
 # HIDL
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/configs/hidl/xiaomi_phoenix_framework_compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
 ODM_MANIFEST_SKUS += phoenix
 ODM_MANIFEST_PHOENIX_FILES := \
