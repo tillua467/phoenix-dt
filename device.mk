@@ -124,3 +124,6 @@ $(call inherit-product, vendor/xiaomi/phoenix/phoenix-vendor.mk)
 
 # Inherit viper4androidfx
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
+# Inherit From MiuiCam
+$(call inherit-product, vendor/xiaomi/miuicamera/MiuiCamera.mk)
