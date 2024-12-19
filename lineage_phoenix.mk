@@ -11,14 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from phoenix device
 $(call inherit-product, device/xiaomi/phoenix/device.mk)
 
-# Inherit some common EVO stuff.
+# Inherit some common Lineage stuff.
 TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-EVO_BUILD_TYPE := Unofficial
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
 TARGET_PHONE_LINK_SUPPORTED := true
-TARGET_USES_MINI_GAPPS := true
 
 # Custom stuff.
 TARGET_BUILD_APERTURE_CAMERA := false
