@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from phoenix device
 $(call inherit-product, device/xiaomi/phoenix/device.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common Crdroid stuff.
 TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -42,3 +42,5 @@ TARGET_VENDOR_PRODUCT_NAME := phoenix
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="phoenix-user 11 RKQ1.200826.002 21.9.28 release-keys" \
     BuildFingerprint=Redmi/phoenix/phoenix:11/RKQ1.200826.002/21.9.28:user/release-keys
+PRODUCT_SYSTEM_PROPERTIES += \
+     ro.crdroid.maintainer=Tillua467
