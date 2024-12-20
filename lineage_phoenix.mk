@@ -11,11 +11,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from phoenix device
 $(call inherit-product, device/xiaomi/phoenix/device.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common AlphaDroid stuff.
 TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_PHONE_LINK_SUPPORTED := true
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
 
 # Custom stuff.
 TARGET_BUILD_APERTURE_CAMERA := false
@@ -25,6 +27,7 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_ENABLE_BLUR := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_FINGERPRINT_UNLOCK_SUPPORTED := true
+TARGET_USE_GOOGLE_TELEPHONY := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := lineage_phoenix
@@ -34,6 +37,13 @@ PRODUCT_MODEL := Redmi K30
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 BOARD_VENDOR := Xiaomi
+
+# AlphaDroid Build Type & Maintainer stuff.
+ALPHA_MAINTAINER := Tillua467
+ALPHA_BUILD_TYPE := UNOFFICIAL
+
+# SOC
+PROCESSOR_MODEL := SM6150
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
