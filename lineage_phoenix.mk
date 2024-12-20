@@ -11,16 +11,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from phoenix device
 $(call inherit-product, device/xiaomi/phoenix/device.mk)
 
-# Inherit some common AlphaDroid stuff.
+# Inherit some common Lineage stuff.
 TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_PHONE_LINK_SUPPORTED := true
-WITH_GAPPS := true
+WITH_GMS := true
 TARGET_GAPPS_ARCH := arm64
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
 
 # Custom stuff.
-TARGET_BUILD_APERTURE_CAMERA := false
+PRODUCT_NO_CAMERA := false
 TARGET_USE_PIXEL_FINGERPRINT := true
 TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_SUPPORTS_QUICK_TAP := true
@@ -38,9 +39,7 @@ PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 BOARD_VENDOR := Xiaomi
 
-# AlphaDroid Build Type & Maintainer stuff.
-ALPHA_MAINTAINER := Tillua467
-ALPHA_BUILD_TYPE := UNOFFICIAL
+MISTOS_MAINTAINER="Tillua467"
 
 # SOC
 PROCESSOR_MODEL := SM6150
