@@ -5,5 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_phoenix.mk
+    $(LOCAL_DIR)/genesis_phoenix.mk
 
+COMMON_LUNCH_CHOICES := \
+    genesis_phoenix-user \
+    genesis_phoenix-userdebug \
+    genesis_phoenix-eng
