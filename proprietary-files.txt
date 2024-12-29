@@ -279,7 +279,7 @@ vendor/lib64/camera/fdconfigvideolite.bin
 vendor/firmware/CAMERA_ICP.elf
 
 # Consumer IR
--vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sm6150.so
+-vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sm6150.so;FIX_SONAME
 
 # Display calibration
 vendor/etc/hdr_config.cfg
@@ -292,8 +292,8 @@ vendor/etc/sdr_config.cfg
 -vendor/lib64/liboemcrypto.so|6b8c5ab8cb16b7f42071ddc59ac868fa684cff4e
 
 # Fingerprint
--vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.sm6150.so
--vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.sm6150.so
+-vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.sm6150.so;FIX_SONAME
+-vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.sm6150.so;FIX_SONAME
 -vendor/lib64/libgf_ca.so
 -vendor/lib64/libgf_hal.so
 -vendor/lib64/libgoodixhwfingerprint.so
