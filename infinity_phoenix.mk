@@ -11,14 +11,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from phoenix device
 $(call inherit-product, device/xiaomi/phoenix/device.mk)
 
-# Inherit some common EVO stuff.
+# Inherit some common infinty-x stuff.
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-EVO_BUILD_TYPE := Unofficial
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+INFINITY_BUILD_TYPE := UNOFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
-TARGET_PHONE_LINK_SUPPORTED := true
-TARGET_USES_MINI_GAPPS := true
+INFINITY_MAINTAINER := Tillua467
+WITH_GAPPS := true
+TARGET_SHIPS_FULL_GAPPS := true
+TARGET_BUILD_GOOGLE_TELEPHONY := true
+USE_MOTO_CALCULATOR := false
+TARGET_BUILD_VIMUSIC := false
 
 # Custom stuff.
 TARGET_BUILD_APERTURE_CAMERA := false
@@ -30,7 +34,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_FINGERPRINT_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_phoenix
+PRODUCT_NAME := infinity_phoenix
 PRODUCT_DEVICE := phoenix
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi K30
