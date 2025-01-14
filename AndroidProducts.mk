@@ -9,6 +9,6 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
     infinity_phoenix-user \
-    infinity_phoenix-userebug \
+    infinity_phoenix-userdebug \
     infinity_phoenix-eng
 
