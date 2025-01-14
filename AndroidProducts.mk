@@ -7,3 +7,8 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/infinity_phoenix.mk
 
+COMMON_LUNCH_CHOICES := \
+    infinity_phoenix-user \
+    infinity_phoenix-userebug \
+    infinity_phoenix-eng
+
