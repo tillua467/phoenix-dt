@@ -5,5 +5,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_phoenix.mk
+    $(LOCAL_DIR)/infinity_phoenix.mk
+
+COMMON_LUNCH_CHOICES := \
+    infinity_phoenix-user \
+    infinity_phoenix-userdebug \
+    infinity_phoenix-eng
 
