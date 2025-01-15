@@ -13,7 +13,7 @@ $(call inherit-product, device/xiaomi/phoenix/device.mk)
 
 # Inherit some common infinty-x stuff.
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/infinity/config/common.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 INFINITY_BUILD_TYPE := UNOFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
