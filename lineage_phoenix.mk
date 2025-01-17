@@ -14,7 +14,6 @@ $(call inherit-product, device/xiaomi/phoenix/device.mk)
 # Inherit some common evo stuff.
 TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-EVO_BUILD_TYPE := Unofficial
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 WITH_GAPPS := true
