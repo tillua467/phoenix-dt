@@ -32,6 +32,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libpiex_shim
 
+# Device Settings
+PRODUCT_PACKAGES += \
+    XiaomiDolby
+
+# Dolby
+TARGET_USES_DOLBY := true
+
 # Init scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.phoenix.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.phoenix.rc
