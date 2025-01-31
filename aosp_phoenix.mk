@@ -11,15 +11,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from phoenix device
 $(call inherit-product, device/xiaomi/phoenix/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common PixelOS stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Targets
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
-WITH_GAPPS := true
-TARGET_BUILD_GOOGLE_TELEPHONY := true
-TARGET_USES_PICO_GAPPS := true
 TARGET_DISABLE_EPPE := true
 TARGET_BUILD_APERTURE_CAMERA := false
 TARGET_USE_PIXEL_FINGERPRINT := true
@@ -30,7 +27,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_FINGERPRINT_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_phoenix
+PRODUCT_NAME := aosp_phoenix
 PRODUCT_DEVICE := phoenix
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi K30
