@@ -113,5 +113,11 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     PhoenixWifiOverlay
 
+# Update
+AB_OTA_UPDATER := false
+
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/phoenix/phoenix-vendor.mk)
+
+# Inherit From MiuiCam
+$(call inherit-product, vendor/xiaomi/miuicamera/MiuiCamera.mk)
