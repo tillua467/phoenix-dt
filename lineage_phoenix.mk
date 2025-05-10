@@ -6,7 +6,6 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-TARGET_SUPPORTS_OMX_SERVICE := false
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from phoenix device
@@ -17,11 +16,12 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
+TARGET_SUPPORTS_OMX_SERVICE := false
 WITH_GMS := true
+WITH_GMS_COMMS_SUITE := true
 TARGET_BUILD_GOOGLE_TELEPHONY := true
 TARGET_DISABLE_EPPE := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_BUILD_APERTURE_CAMERA := false
 TARGET_USE_PIXEL_FINGERPRINT := true
 TARGET_INCLUDE_PIXEL_CHARGER := true
@@ -29,13 +29,11 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_ENABLE_BLUR := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_FINGERPRINT_UNLOCK_SUPPORTED := true
-TARGET_INCLUDE_ACCORD := false
+TARGET_INCLUDE_ACCORD := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_STOCK_ARCORE := true
-AXION_CAMERA_REAR_INFO := 64,8,2,2
-AXION_CAMERA_FRONT_INFO := 20,2
-AXION_MAINTAINER := tillua467
-AXION_PROCESSOR := Snapdragon_730G
+TARGET_INCLUDE_STOCK_AICORE := true
+
 
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := lineage_phoenix
