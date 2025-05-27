@@ -94,6 +94,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     NotchNoFillOverlay
 
+# Private Keys
+-include vendor/lineage-priv/keys/keys.mk
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
