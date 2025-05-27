@@ -91,6 +91,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     NotchNoFillOverlay
 
+# Private Keys
+-include vendor/aosp/keys/keys.mk
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
